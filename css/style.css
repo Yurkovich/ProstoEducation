@@ -73,7 +73,7 @@
 }
 
 .swiper-pagination-bullet {
-    background: url('img/icon/pagination-inactive.svg') no-repeat center center;
+    background: url('../img/icon/pagination-inactive.svg') no-repeat center center;
     background-size: contain;
     opacity: .5;
     width: 47px;
@@ -83,7 +83,7 @@
 }
 
 .swiper-pagination-bullet-active {
-    background: url('img/icon/pagination-active.svg') no-repeat center center;
+    background: url('../img/icon/pagination-active.svg') no-repeat center center;
     background-size: contain;
     opacity: 1;
     width: 150px;
