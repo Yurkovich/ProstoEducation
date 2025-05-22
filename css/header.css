@@ -1,0 +1,123 @@
+.header {
+    font-family: Arial;
+    font-size: 23px;
+    letter-spacing: -0.38px;
+
+}
+
+.header__container {
+    max-width: 1740px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 22px 24px;
+    align-items: center;
+}
+
+.header__top {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 70px;
+    z-index: 10;
+}
+
+.header__location {
+    margin-right: 20px;
+
+    color: #070707;
+    text-wrap-mode: nowrap;
+    z-index: 10;
+    transition: color .3s ease-in;
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    color: #272727;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 10px 26px;
+}
+
+.nav__item {}
+
+.nav__link {
+    padding: 10px;
+}
+
+.header__mobile {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+
+    position: relative;
+    height: 30px;
+    width: 120px;
+    overflow: hidden;
+
+    color: #272727;
+    z-index: 10;
+    transition: color .3s ease-in;
+}
+
+.header__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 60px;
+    margin-left: 121px;
+    height: 47px;
+    width: 197px;
+    overflow: hidden;
+
+    color: #F2F2F2;
+    background-color: var(--accent);
+    z-index: 10;
+    position: relative;
+}
+
+.header__button span {
+    position: absolute;
+    top: 10%;
+    padding-block: 5px;
+    transform: translateY(50px);
+}
+
+
+#menuBtn,
+#closeBtn {
+    position: absolute;
+    font-size: 24px;
+    margin: 0 1rem;
+}
+
+#closeBtn {
+    display: none;
+}
+
+.header__mobile {
+    .animate__animated.animate__slideOutUp,
+    .animate__animated.animate__slideOutDown,
+    .animate__animated.animate__slideInDown,
+    .animate__animated.animate__slideInUp {
+        --animate-duration: .3s;
+    }
+}
+
+.animate__animated.animate__slideOutUp,
+.animate__animated.animate__slideOutDown,
+.animate__animated.animate__slideInDown,
+.animate__animated.animate__slideInUp {
+    --animate-duration: .5s;
+}
