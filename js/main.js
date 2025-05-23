@@ -72,7 +72,7 @@ setInterval(updateKrasnoyarskTime, 60000);
 
 // Слайдер
 
-new Swiper('.about__slider', {
+new Swiper('.hero__slider', {
 
     spaceBetween: 0,
     slidesPerView: 1,

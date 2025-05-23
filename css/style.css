@@ -5,19 +5,18 @@
 @import 'header.css';
 @import 'footer.css';
 
-/* About */
+/* Hero */
 
-.about {
-    margin-top: 165px;
-    margin-bottom: 90px;
+.hero {
+    padding: 165px 0 90px 0
 }
 
-.about__inner {
+.hero__inner {
     display: flex;
     margin-bottom: 68px;
 }
 
-.about__inner-title {
+.hero__inner-title {
     font-size: 80px;
     font-family: Arial;
     line-height: 1;
@@ -26,18 +25,18 @@
     margin-right: 220px;
 }
 
-.about__inner-title span {
+.hero__inner-title span {
     color: var(--accent);
 }
 
-.about__inner-list {
+.hero__inner-list {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.about__inner-item {
+.hero__inner-item {
     display: flex;
     padding-block: 14px;
     padding-left: 20px;
@@ -46,11 +45,11 @@
     color: #F2F2F2;
 }
 
-.about__slider {}
+.hero__slider {}
 
-.about__swiper {}
+.hero__swiper {}
 
-.about__slide {
+.hero__slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,3 +90,71 @@
     border-radius: 10%;
     transform: scale(1.1);
 }
+
+/* About */
+
+.about {
+    padding-block: 90px 220px;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.about__col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.about__col-item {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.about__col-item img {
+    margin-top: -60px;
+}
+
+.col-item-title {
+    flex-grow: 0;
+    padding-bottom: 134px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about__title {
+    font-size: 68px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.col-item--blue {
+    color: #FFF;
+    background: var(--accent);
+}
+
+.col-item--yellow {
+    color: #FFF;
+    background: var(--btn-bg-secondary);
+}
+
+.col-item--white {
+    border: 3.667px solid #000;
+}
+
+.col-item--black {
+    background: var(--btn-bg-main);
+    color: var(--bg-main);
+}
+
