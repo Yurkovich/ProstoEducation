@@ -129,3 +129,27 @@ function startTextSlider() {
 document.addEventListener("DOMContentLoaded", () => {
     startTextSlider();
 });
+
+
+// Аккордеон
+
+document.querySelectorAll('.question__questions-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const index = button.getAttribute('data-index');
+
+        document.querySelectorAll('.question__answer-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+        document.querySelectorAll('.question__questions-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        const answer = document.querySelector(`.question__answer-item[data-index="${index}"]`);
+        if (answer) {
+            answer.classList.add('active');
+        }
+
+        button.classList.add('active');
+    });
+});

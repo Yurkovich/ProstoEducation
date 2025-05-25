@@ -107,6 +107,11 @@
         grid-column: 1 / -1;
     }
 
+    /* Testimonials */
+
+    .testimonials__title {
+        margin-left: 0;
+    }
 
 }
 
@@ -122,6 +127,20 @@
 
     .roadmap__list {
         gap: 20px 22px;
+    }
+
+    /* Question */
+
+    .question__inner {
+        flex-direction: column;
+    }
+
+    .question__title {
+        margin-bottom: 20px;
+    }
+
+    .question__col:nth-child(2) {
+        padding-inline: 10px;
     }
 
 }
@@ -198,6 +217,24 @@
 
     .course__row-item--number {
         font-size: clamp(3.75rem, 3.295rem + 2.27vw, 5rem);
+    }
+
+    /* Question */
+
+    .question__title {
+        font-size: 12vw;
+    }
+
+    /* Testimonials */
+
+    .testimonials__title {
+        font-size: 12vw;
+    }
+
+    /* Footer */
+
+    .footer__logo {
+        font-size: 16vw;
     }
 
 }
