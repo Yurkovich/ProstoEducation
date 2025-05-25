@@ -310,6 +310,8 @@
     flex-direction: column;
     gap: 25px;
     padding: 0;
+    font-size: 80px;
+    line-height: 1;
 }
 
 .course__button {

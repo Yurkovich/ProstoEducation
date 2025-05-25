@@ -118,6 +118,12 @@
         display: none;
     }
 
+    /* Roadmap */
+
+    .roadmap__list {
+        gap: 20px 22px;
+    }
+
 }
 
 @media (max-width: 670px) {
@@ -188,6 +194,10 @@
 
     .course__row-2 {
         grid-template-columns: 1fr;
+    }
+
+    .course__row-item--number {
+        font-size: clamp(3.75rem, 3.295rem + 2.27vw, 5rem);
     }
 
 }
