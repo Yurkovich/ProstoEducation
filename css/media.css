@@ -190,12 +190,4 @@
         grid-template-columns: 1fr;
     }
 
-    .course__row-item--number {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
 }

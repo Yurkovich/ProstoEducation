@@ -306,6 +306,9 @@
 }
 
 .course__row-item--number {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     padding: 0;
 }
 
