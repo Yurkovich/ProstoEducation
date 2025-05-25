@@ -50,7 +50,7 @@
         flex-direction: column;
     }
 
-    .hero__inner-title {
+    .hero__title {
         margin-right: 0;
         margin-bottom: 40px;
     }
@@ -79,6 +79,35 @@
         flex-direction: row;
     }
 
+    /* Roadmap */
+
+    .roadmap__title {
+        margin-left: 0;
+    }
+
+    /* Course */
+
+    .course__row {
+        grid-template-rows: auto;
+    }
+
+    .course__row-1 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .course__row-1>.course__row-item:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .course__row-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .course__row-2>.course__row-item:last-child {
+        grid-column: 1 / -1;
+    }
+
+
 }
 
 @media (max-width: 930px) {
@@ -99,11 +128,15 @@
         display: none;
     }
 
-    .hero__inner-title {
+    .hero__title {
         font-size: 12vw;
     }
 
     /* About */
+
+    .about__title {
+        font-size: 12vw;
+    }
 
     .about__inner {
         grid-template-columns: 1fr;
@@ -132,4 +165,37 @@
     .about__col-item {
         min-height: 200px;
     }
+
+    /* Roadmap */
+
+    .roadmap__title {
+        font-size: 12vw;
+    }
+
+    /* Courses */
+
+    .course__inner {
+        font-size: 8vw;
+    }
+
+    .course__title {
+        font-size: 12vw;
+    }
+
+    .course__row-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .course__row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .course__row-item--number {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
 }

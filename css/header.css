@@ -5,10 +5,6 @@
 
 }
 
-.header__container {
-    max-width: 1740px;
-}
-
 .header__inner {
     display: flex;
     justify-content: space-between;

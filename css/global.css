@@ -41,6 +41,10 @@ body {
     height: 100%;
 }
 
+.container--xl {
+    max-width: 1740px;
+}
+
 /* Мобильное меню */
 
 body.menu-open {
@@ -87,3 +91,4 @@ body.menu-open .nav__list {
         opacity: 1;
     }
 }
+
